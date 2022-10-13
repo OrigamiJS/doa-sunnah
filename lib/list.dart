@@ -72,8 +72,8 @@ class _ArticleDescription extends StatelessWidget {
   }
 }
 
-class CustomListItemTwo extends StatelessWidget {
-  const CustomListItemTwo({
+class CustomListItem extends StatelessWidget {
+  const CustomListItem({
     super.key,
     required this.thumbnail,
     required this.title,
@@ -130,7 +130,7 @@ class List extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.all(10.0),
       children: <Widget>[
-        CustomListItemTwo(
+        CustomListItem(
           thumbnail: Container(
             decoration: const BoxDecoration(color: Colors.pink),
           ),
@@ -140,16 +140,6 @@ class List extends StatelessWidget {
           author: 'Dash',
           publishDate: 'Dec 28',
           readDuration: '5 mins',
-        ),
-        CustomListItemTwo(
-          thumbnail: Container(
-            decoration: const BoxDecoration(color: Colors.blue),
-          ),
-          title: 'Flutter 1.2 Release - Continual updates to the framework',
-          subtitle: 'Flutter once again improves and makes updates.',
-          author: 'Flutter',
-          publishDate: 'Feb 26',
-          readDuration: '12 mins',
         ),
       ],
     );

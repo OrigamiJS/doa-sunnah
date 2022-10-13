@@ -1,3 +1,4 @@
+import 'package:doa/sliver_app_bar.dart';
 import 'package:flutter/material.dart';
 import './drawer.dart';
 import './list.dart';
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Kumpulan Doa'),
+      // home: const MyHomePage(title: 'Kumpulan Doa'),
+      home: const SliverAppBarExample(),
     );
   }
 }
