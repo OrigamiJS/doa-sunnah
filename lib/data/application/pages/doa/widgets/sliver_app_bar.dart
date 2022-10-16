@@ -1,4 +1,4 @@
-import 'package:doa/list.dart';
+import 'package:doa/data/application/pages/main/widgets/list.dart';
 import 'package:flutter/material.dart';
 
 class SliverAppBarExample extends StatefulWidget {
@@ -22,11 +22,12 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
         slivers: <Widget>[
           SliverAppBar(
             pinned: _pinned,
+            centerTitle: true,
             snap: _snap,
             floating: _floating,
             expandedHeight: 200.0,
             flexibleSpace: const FlexibleSpaceBar(
-              title: Text('SliverAppBar'),
+              title: Text('Doa Sunnah'),
               background: FlutterLogo(),
             ),
           ),
@@ -43,9 +44,9 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
               (BuildContext context, int index) {
                 return Container(
                   color: index.isOdd ? Colors.white : Colors.black12,
-                  height: 150.0,
-                  child: Center(
-                    child: const List(),
+                  height: 150.00,
+                  child: const Center(
+                    child: List(),
                   ),
                 );
               },
