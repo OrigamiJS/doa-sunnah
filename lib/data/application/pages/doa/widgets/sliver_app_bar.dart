@@ -1,4 +1,4 @@
-import 'package:doa/data/application/pages/main/widgets/list.dart';
+import 'package:doa/data/application/pages/base/widgets/list.dart';
 import 'package:flutter/material.dart';
 
 class SliverAppBarExample extends StatefulWidget {
@@ -26,9 +26,9 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
             snap: _snap,
             floating: _floating,
             expandedHeight: 200.0,
-            flexibleSpace: const FlexibleSpaceBar(
-              title: Text('Doa Sunnah'),
-              background: FlutterLogo(),
+            flexibleSpace: FlexibleSpaceBar(
+              title: const Text('My App'),
+              background: Image.asset('images/149.jpg', fit: BoxFit.cover),
             ),
           ),
           const SliverToBoxAdapter(

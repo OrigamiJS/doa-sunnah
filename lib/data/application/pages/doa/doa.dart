@@ -1,12 +1,11 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:doa/data/application/pages/doa/widgets/sliver_app_bar.dart';
+import 'package:flutter/material.dart';
 
 class Doa extends StatelessWidget {
   const Doa({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const SliverAppBarExample();
   }
 }
